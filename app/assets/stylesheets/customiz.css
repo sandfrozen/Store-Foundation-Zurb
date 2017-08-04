@@ -1,0 +1,13 @@
+.body {
+  padding: 2rem;
+}
+
+.row {
+  border: 1px solid salmon;
+  margin: 2rem;
+}
+
+.column,
+.columns {
+  border: 1px solid red;
+}

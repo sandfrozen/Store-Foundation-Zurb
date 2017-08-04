@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>
+            <%= content_for?(:title) ? yield(:title) : "Untitled" %>
+        </title>
+        <%= stylesheet_link_tag    "application" %>
+        <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+      <div class="row">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the left</div>
+      </div>
+      <div class="row align-right">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the right</div>
+      </div>
+      <div class="row align-center">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the middle</div>
+      </div>
+      <div class="row align-justify">
+        <div class="column small-4">Aligned to</div>
+        <div class="column small-4">the edges</div>
+      </div>
+      <div class="row align-spaced">
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+        <div class="column shrink">Aligned to</div>
+      </div>
+        <div class="row">
+            <div class="columns shrink">
+                <%= yield %>
+                </div>
+                <div class="columns">
+                    <h2>
+                        Lorem text
+                    </h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur    luctus justo, at facilisis sem. Orci varius natoque penatibu    magnis dis parturient montes, nascetur ridiculus mus. Aliqu   viverra arcu. Praesent viverra, libero sed bibendum pretium, nunc o   consectetur elit, eget egestas justo lectus nec tortor. Phasellu   tellus non ipsum suscipit cursus quis in elit. Aliquam facilisis j   eu ipsum malesuada scelerisque. Maecenas quis ligula sit amet  aliquet porta. Pellentesque habitant morbi tristique senectus et ne    et malesuada fames ac turpis egestas. Morbi ut dictum arcu    volutpat sagittis lorem, sit amet convallis felis. Mauris rutrum    at turpis porttitor, vitae fringilla eros facilisis. Morbi dignis   ipsum turpis, sed egestas ex tempor quis. Praesent auctor, urn  consectetur hendrerit, mi est viverra neque, nec feugiat eros tu   vitae mi.
+            </div>
+        </div>
+    </body>
+</html>
